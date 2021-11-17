@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L7n-TN-eDU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScreenChangeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="mQJ-vm-R0Q">
+                                <rect key="frame" x="132" y="269.5" width="150" height="357"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kY-fU-KfR">
+                                        <rect key="frame" x="11.5" y="0.0" width="127" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Segue 로 Push"/>
+                                        <connections>
+                                            <segue destination="heu-dZ-E88" kind="show" id="UPc-8O-o1f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SG-Pi-nwJ">
+                                        <rect key="frame" x="0.0" y="107" width="150" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Segue 로 Present"/>
+                                        <connections>
+                                            <segue destination="CiO-dx-Iao" kind="presentation" modalPresentationStyle="fullScreen" id="U3K-6z-LQv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-fK-3UO">
+                                        <rect key="frame" x="24.5" y="214" width="101" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="코드로 Push"/>
+                                        <connections>
+                                            <action selector="tapCodePushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19x-fW-NS5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKB-MQ-n1C">
+                                        <rect key="frame" x="13" y="321" width="124" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="코드로 Present"/>
+                                        <connections>
+                                            <action selector="tapCodePresentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bj-6N-qQI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mQJ-vm-R0Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27u-Eq-bbU"/>
+                            <constraint firstItem="mQJ-vm-R0Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rcJ-EY-OfG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tof-0d-Kxo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="206.91964285714286"/>
+        </scene>
+        <!--Segue Push View Controller-->
+        <scene sceneID="moe-E8-nDP">
+            <objects>
+                <viewController id="heu-dZ-E88" customClass="SeguePushViewController" customModule="ScreenChangeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzB-tR-bsW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-qA-kCm">
+                                <rect key="frame" x="143.5" y="383.5" width="127" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue 로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK3-Ur-hDf">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt9-og-HpB">
+                                        <rect key="frame" x="10" y="93" width="107" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="heu-dZ-E88" eventType="touchUpInside" id="N4n-uT-BWZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BHT-Ql-tyG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mu1-qA-kCm" firstAttribute="centerY" secondItem="zzB-tR-bsW" secondAttribute="centerY" id="8Pv-SC-dDc"/>
+                            <constraint firstItem="mu1-qA-kCm" firstAttribute="centerX" secondItem="zzB-tR-bsW" secondAttribute="centerX" id="BhR-CW-EMh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ora-O3-rZw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiQ-Ii-EH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-74"/>
+        </scene>
+        <!--Code Push View Controller-->
+        <scene sceneID="DZs-Bj-o8A">
+            <objects>
+                <viewController storyboardIdentifier="CodePushViewController" id="2SH-Mw-uTJ" customClass="CodePushViewController" customModule="ScreenChangeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TNc-zN-04D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-Ju-pES">
+                                <rect key="frame" x="153.5" y="383.5" width="107" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qk-N7-reO">
+                                        <rect key="frame" x="3.5" y="0.0" width="100.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odS-27-Fro">
+                                        <rect key="frame" x="0.0" y="93" width="107" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="heu-dZ-E88" eventType="touchUpInside" id="OZN-MP-dyA"/>
+                                            <action selector="tapBackButton:" destination="2SH-Mw-uTJ" eventType="touchUpInside" id="Xu1-l2-os0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="joa-6Q-ocx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yit-Ju-pES" firstAttribute="centerX" secondItem="TNc-zN-04D" secondAttribute="centerX" id="RF3-Ch-jHU"/>
+                            <constraint firstItem="Yit-Ju-pES" firstAttribute="centerY" secondItem="TNc-zN-04D" secondAttribute="centerY" id="keu-2q-qCv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ob-Ga-WD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="668"/>
+        </scene>
+        <!--Code Present View Controller-->
+        <scene sceneID="Rwy-Am-8Pl">
+            <objects>
+                <viewController storyboardIdentifier="CodePresentViewController" id="AB6-TL-2Vf" customClass="CodePresentViewController" customModule="ScreenChangeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lru-IK-7Ft">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="J9j-V1-8he">
+                                <rect key="frame" x="145" y="383.5" width="124" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-9D-fUn">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aK8-j9-fJM">
+                                        <rect key="frame" x="8.5" y="93" width="107" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="heu-dZ-E88" eventType="touchUpInside" id="BUu-WW-OKa"/>
+                                            <action selector="tapBackButton:" destination="AB6-TL-2Vf" eventType="touchUpInside" id="Ud9-JM-SVg"/>
+                                            <action selector="tapBackButton:" destination="2SH-Mw-uTJ" eventType="touchUpInside" id="vhw-pZ-ooV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rkb-6Z-Vz1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J9j-V1-8he" firstAttribute="centerX" secondItem="lru-IK-7Ft" secondAttribute="centerX" id="bzP-Rl-afH"/>
+                            <constraint firstItem="J9j-V1-8he" firstAttribute="centerY" secondItem="lru-IK-7Ft" secondAttribute="centerY" id="zTl-LI-teL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnw-1r-QVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512" y="668"/>
+        </scene>
+        <!--Segue Present View Controller-->
+        <scene sceneID="0RV-7p-DsR">
+            <objects>
+                <viewController id="CiO-dx-Iao" customClass="SeguePresentViewController" customModule="ScreenChangeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hky-ys-mZN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="bVT-nk-giz">
+                                <rect key="frame" x="132" y="383.5" width="150" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue 로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-ko-fRq">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5L-cV-KhL">
+                                        <rect key="frame" x="21.5" y="93" width="107" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="CiO-dx-Iao" eventType="touchUpInside" id="aAe-oo-Pzn"/>
+                                            <action selector="tapBackButton:" destination="heu-dZ-E88" eventType="touchUpInside" id="rz3-rQ-i4R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bwj-xk-fgy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bVT-nk-giz" firstAttribute="centerX" secondItem="hky-ys-mZN" secondAttribute="centerX" id="QrP-0U-QBA"/>
+                            <constraint firstItem="bVT-nk-giz" firstAttribute="centerY" secondItem="hky-ys-mZN" secondAttribute="centerY" id="cRQ-KX-9JP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97Z-F5-rXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512" y="-74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fJN-k7-inS">
+            <objects>
+                <navigationController id="L7n-TN-eDU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJa-pg-U3x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A3t-SS-h8H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3e-Xw-zB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
