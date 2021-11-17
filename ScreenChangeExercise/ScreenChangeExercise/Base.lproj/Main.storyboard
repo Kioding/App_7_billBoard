@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="mQJ-vm-R0Q">
-                                <rect key="frame" x="132" y="269.5" width="150" height="357"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mQJ-vm-R0Q">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kY-fU-KfR">
-                                        <rect key="frame" x="11.5" y="0.0" width="127" height="36"/>
+                                        <rect key="frame" x="123.5" y="0.0" width="127" height="114"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Segue 로 Push"/>
                                         <connections>
@@ -28,7 +28,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SG-Pi-nwJ">
-                                        <rect key="frame" x="0.0" y="107" width="150" height="36"/>
+                                        <rect key="frame" x="112" y="124" width="150" height="114"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Segue 로 Present"/>
                                         <connections>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-fK-3UO">
-                                        <rect key="frame" x="24.5" y="214" width="101" height="36"/>
+                                        <rect key="frame" x="136.5" y="248" width="101" height="114"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="코드로 Push"/>
                                         <connections>
@@ -44,11 +44,24 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKB-MQ-n1C">
-                                        <rect key="frame" x="13" y="321" width="124" height="36"/>
+                                        <rect key="frame" x="125" y="372" width="124" height="114"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="코드로 Present"/>
                                         <connections>
                                             <action selector="tapCodePresentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bj-6N-qQI"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQx-o9-5Qf">
+                                        <rect key="frame" x="166.5" y="496" width="41.5" height="114"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmc-4x-jaM">
+                                        <rect key="frame" x="124" y="620" width="126" height="114"/>
+                                        <state key="normal" title="reset Label Button"/>
+                                        <connections>
+                                            <action selector="resetLabelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xq-hl-00Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -58,10 +71,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mQJ-vm-R0Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27u-Eq-bbU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mQJ-vm-R0Q" secondAttribute="trailing" constant="20" id="Rj7-dA-1eX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mQJ-vm-R0Q" secondAttribute="bottom" constant="20" id="hdM-M8-2Ho"/>
+                            <constraint firstItem="mQJ-vm-R0Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nAf-Ab-f7x"/>
+                            <constraint firstItem="mQJ-vm-R0Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="noi-ac-T3X"/>
                             <constraint firstItem="mQJ-vm-R0Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rcJ-EY-OfG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tof-0d-Kxo"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="UQx-o9-5Qf" id="HRe-Xe-xLQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-qA-kCm">
-                                <rect key="frame" x="143.5" y="383.5" width="127" height="129"/>
+                                <rect key="frame" x="143.5" y="337" width="127" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue 로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK3-Ur-hDf">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="36"/>
@@ -92,6 +112,12 @@
                                             <action selector="tapBackButton:" destination="heu-dZ-E88" eventType="touchUpInside" id="N4n-uT-BWZ"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P5-aU-ZxZ">
+                                        <rect key="frame" x="43" y="186" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -103,6 +129,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ora-O3-rZw"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="4P5-aU-ZxZ" id="DZB-Sd-hDN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiQ-Ii-EH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +146,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-Ju-pES">
-                                <rect key="frame" x="153.5" y="383.5" width="107" height="129"/>
+                                <rect key="frame" x="153.5" y="337" width="107" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qk-N7-reO">
                                         <rect key="frame" x="3.5" y="0.0" width="100.5" height="36"/>
@@ -134,6 +163,12 @@
                                             <action selector="tapBackButton:" destination="2SH-Mw-uTJ" eventType="touchUpInside" id="Xu1-l2-os0"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvG-Jh-K89">
+                                        <rect key="frame" x="33" y="186" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -144,6 +179,9 @@
                             <constraint firstItem="Yit-Ju-pES" firstAttribute="centerY" secondItem="TNc-zN-04D" secondAttribute="centerY" id="keu-2q-qCv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="HvG-Jh-K89" id="LyH-Rb-hvo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ob-Ga-WD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +196,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="J9j-V1-8he">
-                                <rect key="frame" x="145" y="383.5" width="124" height="129"/>
+                                <rect key="frame" x="145" y="337" width="124" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-9D-fUn">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="36"/>
@@ -176,6 +214,12 @@
                                             <action selector="tapBackButton:" destination="2SH-Mw-uTJ" eventType="touchUpInside" id="vhw-pZ-ooV"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3E-ju-hXF">
+                                        <rect key="frame" x="41.5" y="186" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -186,6 +230,9 @@
                             <constraint firstItem="J9j-V1-8he" firstAttribute="centerY" secondItem="lru-IK-7Ft" secondAttribute="centerY" id="zTl-LI-teL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="b3E-ju-hXF" id="Vfc-TB-qE8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnw-1r-QVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +247,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="bVT-nk-giz">
-                                <rect key="frame" x="132" y="383.5" width="150" height="129"/>
+                                <rect key="frame" x="132" y="337" width="150" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue 로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-ko-fRq">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
@@ -217,6 +264,12 @@
                                             <action selector="tapBackButton:" destination="heu-dZ-E88" eventType="touchUpInside" id="rz3-rQ-i4R"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vT1-f4-VZN">
+                                        <rect key="frame" x="54.5" y="186" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -227,6 +280,9 @@
                             <constraint firstItem="bVT-nk-giz" firstAttribute="centerY" secondItem="hky-ys-mZN" secondAttribute="centerY" id="cRQ-KX-9JP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="vT1-f4-VZN" id="VDJ-F3-Mi0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97Z-F5-rXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

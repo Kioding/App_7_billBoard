@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				33D1AFF827448D720010E1DB /* SeguePushViewController.swift */,
-				33D1AFFE274490260010E1DB /* CodePushViewController.swift */,
 				33D1AFFB27448EF60010E1DB /* SeguePresentViewController.swift */,
+				33D1AFFE274490260010E1DB /* CodePushViewController.swift */,
 				33D1B002274492040010E1DB /* CodePresentViewController.swift */,
 			);
 			path = ViewController;
