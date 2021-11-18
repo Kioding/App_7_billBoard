@@ -13,7 +13,7 @@
 <br>
 
 ## 학습내용
-## Content View Controller
+### Content View Controller
    - 화면을 구성하는 뷰를 직접 구현하고 관련된 이벤트를 처리하는 뷰 컨트롤러
 ### Containver View Controller
    - 하나 이상의 `Child View Controller`를 가지고 있다.
@@ -38,21 +38,27 @@
 
 <br>
 
-### 화면 전환 연습
-##### Segue 로 Push  
+### A. 화면 전환 연습
+##### A-1. Segue 로 Push  
 ![화면 기록 2021-11-17 오전 10 46 07](https://user-images.githubusercontent.com/65153742/142094254-83405d28-f657-4c20-bb4a-a8131acf195e.gif)
-##### Segue 로 Present  
+##### A-2. Segue 로 Present  
 ![화면 기록 2021-11-17 오전 10 46 19](https://user-images.githubusercontent.com/65153742/142094656-13b94c5f-512e-4d6d-96eb-428cc90d65c5.gif)
-##### 코드로 Push   
+##### A-3. 코드로 Push   
 ![화면 기록 2021-11-17 오전 10 46 29](https://user-images.githubusercontent.com/65153742/142094664-4e9f6212-8710-4618-a4ff-cce190f2de12.gif)
-##### 코드로 Present   
+##### A-4. 코드로 Present   
 ![화면 기록 2021-11-17 오전 10 46 38](https://user-images.githubusercontent.com/65153742/142094670-7d1242a2-48d9-45ff-bca2-aa17141ccba5.gif)
 
+<br>
+
+### B. 화면간 데이터 전달하기 연습
+#### B-1. Segue로 데이터 전달
+![화면 기록 2021-11-18 오전 2 09 16](https://user-images.githubusercontent.com/65153742/142248854-821c5c5a-1a97-494b-bad0-019a227d345c.gif)
+#### B-2. 코드로 데이터 전달
+![화면 기록 2021-11-18 오전 2 09 33](https://user-images.githubusercontent.com/65153742/142248867-f5cf3a6f-7790-426b-b520-c9efa9021ab3.gif)
 
 <br>
 
 ### ViewController Life Cycle
-
 ![스크린샷 2021-11-17 오전 9 41 14](https://user-images.githubusercontent.com/65153742/142088528-0b1968f9-10ff-45ad-b8d8-b619a7878708.png)
 
 - Appering: 뷰가 화면에 나타나는 중
